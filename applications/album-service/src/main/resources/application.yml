@@ -3,10 +3,13 @@ server.port: 8081
 spring:
   jpa:
     properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
-
   datasource:
     url: jdbc:mysql://localhost:3306/albums?useSSL=false
     username: root
+
+security:
+  basic:
+    enabled: false
 
 logging.level:
   root: WARN
@@ -16,3 +19,8 @@ s3:
   accessKey: <access key id>
   secretKey: <secret access key>
   bucketName: <name of the bucket>
+
+
+
+
+
